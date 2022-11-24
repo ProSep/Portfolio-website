@@ -5,9 +5,12 @@ import styled from "styled-components";
 const CardItemStyle = styled.li`
   display: flex;
   flex: 1;
+  max-width: 500px;
   margin: 0 1rem;
   border-radius: 10px;
   margin-bottom: 24px;
+  background-color: ${({ theme }) => theme.colors.netural};
+  z-index: 5;
 
   @media only screen and (min-width: 1024px) {
     display: flex;
@@ -18,6 +21,7 @@ const CardLinkStyle = styled(Link)`
   display: flex;
   flex-flow: column;
   width: 100%;
+  height: 100%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -68,9 +72,10 @@ const CardsImageStyle = styled.img`
 
 const CardsInfoStyle = styled.div`
   padding: 20px 30px 30px;
+  width: 500px; //Card width
 `;
 
-const CardTextStyle = styled.h5`
+const CardTextStyle = styled.h2`
   font-size: 18px;
   line-height: 24px;
   color: ${({ theme }) => theme.colors.neturalo};
