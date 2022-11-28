@@ -2,9 +2,8 @@ import React, {useState} from "react";
 import styled, { css } from "styled-components";
 
 const MainWrapperStyle = styled.div`
-  width: 100%;
+  width: auto;
   height: 100%;
-	background-color: white;
 `;
 
 const SlidesStyle = styled.div`
@@ -13,13 +12,17 @@ const SlidesStyle = styled.div`
   display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
 `;
 
 const ImageStyle = styled.img`
-  width: auto;
-  background-color: black;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 33px;
+  min-height: 630px;
+  @media only screen and (max-width: 1120px) {
+    min-height: auto;
+  }
 `;
 
 const IconStyle = styled.i`

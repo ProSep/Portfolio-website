@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const MainWrapperStyle = styled.div`
   width: 100%;
   height: 100%;
-	background-color: white;
+  padding: 100px 0 100px 0;
 `;
 
 
@@ -13,6 +13,7 @@ const VideoStyled = styled.video `
     width: 100%;
     height: 100%;
     display: block;
+    border-radius: 33px;
 `
 
 const Video = ({data}) => {

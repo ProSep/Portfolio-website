@@ -1,38 +1,87 @@
-export const CarouselData = [
+import Guitar1 from "../../Assets/3DM/Gitar1.png";
+import Guitar2 from "../../Assets/3DM/Gitar2.png";
+import Guitar3 from "../../Assets/3DM/Gitar3.png";
+import Guitar4 from "../../Assets/3DM/Gitar4.png";
+import Room1 from "../../Assets/3DM/Room1.jpg";
+import Room2 from "../../Assets/3DM/Room2.jpg";
+import Room3 from "../../Assets/3DM/Room3.jpg";
+import Room4 from "../../Assets/3DM/Room4.jpg";
+import Room5 from "../../Assets/3DM/Room5.jpg";
+import Robot1 from "../../Assets/3DM/Robot1.png";
+import Robot2 from "../../Assets/3DM/Robot2.png";
+import Robot3 from "../../Assets/3DM/Robot3.png";
+import Robot4 from "../../Assets/3DM/Robot4.png";
+import Robot5 from "../../Assets/3DM/Robot5.png";
+import Robot6 from "../../Assets/3DM/Robot6.png";
+
+
+
+export const CarouselDataGuitar = [
     {
-        image: 'https://images.unsplash.com/photo-1661386290029-914a541a1995?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Q0R3dXdYSkFiRXd8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+        image: Guitar2,
         slug: 0,
     },
     {
-        image:'https://images.unsplash.com/photo-1661705969607-cde73828023d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Q0R3dXdYSkFiRXd8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+        image: Guitar1,
         slug: 1,
     },
     {
-        image:'https://images.unsplash.com/photo-1661530653675-5eb7b28693b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        image: Guitar3,
         slug: 2,
     },
     {
-        image:'https://images.unsplash.com/photo-1544085311-11a028465b03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bm9yd2F5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        image: Guitar4,
         slug: 3,
     },
 ];
 
-export const CarouselDataNew = [
+export const CarouselDataRoom = [
     {
-        image:'https://images.unsplash.com/photo-1661705969607-cde73828023d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8Q0R3dXdYSkFiRXd8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+        image: Room4,
         slug: 0,
     },
     {
-        image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+        image: Room2,
         slug: 1,
     },
     {
-        image:'https://images.unsplash.com/photo-1661530653675-5eb7b28693b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfENEd3V3WEpBYkV3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        image: Room3,
         slug: 2,
     },
     {
-        image:'https://images.unsplash.com/photo-1544085311-11a028465b03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bm9yd2F5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        image: Room1,
         slug: 3,
+    },
+    {
+        image: Room5,
+        slug: 4,
+    },
+];
+
+export const CarouselDataRobot = [
+    {
+        image: Robot1,
+        slug: 0,
+    },
+    {
+        image: Robot2,
+        slug: 1,
+    },
+    {
+        image: Robot3,
+        slug: 2,
+    },
+    {
+        image: Robot4,
+        slug: 3,
+    },
+    {
+        image: Robot5,
+        slug: 4,
+    },
+    {
+        image: Robot6,
+        slug: 5,
     },
 ];
 

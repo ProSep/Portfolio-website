@@ -3,82 +3,37 @@ import styled from 'styled-components';
 const FooterArea = styled.footer`
   padding: 44px;
   background-color: ${({ theme }) => theme.colors.neturalo};
+  border-top-style: solid;
+  border-color: white;
+  border-width: 1px;
+
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
-const StyledFooter = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto 0 auto;
-  @media (${({ theme }) => theme.scale.medium}) {
-    width: 1400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  @media (${({ theme }) => theme.scale.small}) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  } ;
+const FooterHeader1 = styled.h1`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
 `;
 
-const FooterBox1 = styled.section`
-  text-align: center;
-  color: ${({ theme }) => theme.colors.netural};
-  display: block;
-  grid-columns: 1;
-  margin-right: 10rem;
-
-  @media (${({ theme }) => theme.scale.small}) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5rem;
-  } ;
+const FooterHeader2 = styled.h1`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 40px;
+  text-transform: lowercase;
 `;
 
-const FooterBox2 = styled.section`
-  text-align: center;
-  color: ${({ theme }) => theme.colors.netural};
-  display: block;
-  grid-columns: 2;
 
-  @media (${({ theme }) => theme.scale.small}) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  } ;
-`;
-
-const KontaktFooter = styled.p`
-  margin-bottom: 2.5rem;
-`;
 
 const Footer = () => (
   <FooterArea>
-    <StyledFooter>
-      <FooterBox1>
-        <KontaktFooter>Outland AS</KontaktFooter>
-        <KontaktFooter>Kirkegata 23 0153 Oslo</KontaktFooter>
-        <KontaktFooter>kundeservice@outland.no</KontaktFooter>
-        <KontaktFooter>Kontakt - 55 31 48 22</KontaktFooter>
-        <KontaktFooter>Mandag–onsdag: 10.00–18.00</KontaktFooter>
-      </FooterBox1>
-      <FooterBox2>
-      </FooterBox2>
-    </StyledFooter>
+    <FooterHeader1>Kontakt meg</FooterHeader1>
+    <FooterHeader2>johan.b.reitan@gmail.com</FooterHeader2>
   </FooterArea>
 );
 
