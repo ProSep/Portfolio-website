@@ -60,7 +60,7 @@ const NavmenuSty = styled.ul`
             opacity: 1;
             transition: all 0.5s ease;
             z-index: 1;
-            background-color: ${({ theme }) => theme.colors.grey};
+            background-color: ${({ theme }) => theme.colors.neturalo};
           `
         : "none"};
 ; 

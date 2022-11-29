@@ -13,14 +13,14 @@ const FooterArea = styled.footer`
 	align-items: center;
 `;
 
-const FooterHeader1 = styled.h1`
+const FooterHeader1 = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
 `;
 
-const FooterHeader2 = styled.h1`
+const FooterHeader2 = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 33px;

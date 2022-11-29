@@ -3,6 +3,7 @@ import Cards from "../Cards";
 import Hero from "../Hero";
 import styled from "styled-components";
 import {CardsData} from "../Data/CardsData";
+import Webicon from "../../Assets/Icon/Webicon.js";
 
 
 const BoxBackground1 = styled.div`
@@ -29,15 +30,19 @@ filter: blur(449.5px);
 `
 
 const ContentBox = styled.div`
-    padding: 100px 0 100px 0;
     width: 1120px;
-    margin: auto;
+    margin: 100px auto 0px auto;
     z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: ${({ theme }) => theme.colors.neturalo};
+
+    @media only screen and (max-width: 1120px) {
+        width: 100%;
+  }
+
 `
 const FerdigheterWrapper = styled.div`
     display: flex;
@@ -49,7 +54,14 @@ const WrapperInside = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 370px;
+    width: 100%;
+`
+
+const IconWrapper = styled.div`
+    width: 25vw;
+    height: 25vw;
+    max-width: 310px;
+    max-height: 310px;
 `
 
 
@@ -60,21 +72,26 @@ function Mal () {
             <BoxBackground1/>
             <Hero header="Johan B. Reitan" p="Frontend developer and 3D artist"/>
             <ContentBox>
-                <h1>Ferdigheter</h1>
+                <h2>Ferdigheter</h2>
                 <FerdigheterWrapper>
                     <WrapperInside>
-                        <img src="https://findicons.com/files/icons/766/base_software/256/circle_blue.png" alt="" />
+                        <IconWrapper>
+                            <Webicon/>
+                        </IconWrapper>
                         <h3>Webutvikling</h3>
                         <p>Har jobbet med Javascrypt, CSS/HTML og React til utvikling av nettsidene jeg har laget</p>
                     </WrapperInside>
                     <WrapperInside>
-                        <img src="https://findicons.com/files/icons/766/base_software/256/circle_blue.png" alt="" />
+                        <IconWrapper>
+                            <Webicon/>
+                        </IconWrapper>
                     </WrapperInside>
                     <WrapperInside>
-                        <img src="https://findicons.com/files/icons/766/base_software/256/circle_blue.png" alt="" />
+                    <IconWrapper>
+                            <Webicon/>
+                        </IconWrapper>
                     </WrapperInside>
                 </FerdigheterWrapper>
-
             </ContentBox>
             <Cards data={CardsData}/>
         </>

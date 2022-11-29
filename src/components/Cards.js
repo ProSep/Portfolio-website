@@ -3,11 +3,11 @@ import styled from "styled-components";
 import CardItem from "./Carditem";
 
 const CardsStyle = styled.div`
-  padding: 4rem;
   background: ${({ theme }) => theme.colors.neturalo};
+  margin: 100px auto 0px auto;
 `;
 
-const HeaderText = styled.h1`
+const HeaderText = styled.h2`
   text-align: center;
 `;
 
@@ -30,7 +30,7 @@ const CardsWrapperStyle = styled.div`
 const Cards = ({data}) => {
   return (
     <CardsStyle>
-      <HeaderText>Text</HeaderText>
+      <HeaderText>Portfolio</HeaderText>
       <CardsContainerStyle>
         <CardsWrapperStyle>
           {data.map((data) => {
