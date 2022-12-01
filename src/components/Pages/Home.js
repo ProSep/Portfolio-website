@@ -32,7 +32,8 @@ filter: blur(449.5px);
 `
 
 const ContentBox = styled.div`
-    width: 1120px;
+    max-width: 1120px;
+    width: 100%;
     margin: 0px auto 0px auto;
     z-index: 5;
     display: flex;
@@ -42,13 +43,16 @@ const ContentBox = styled.div`
     background-color: ${({ theme }) => theme.colors.neturalo};
 
     @media only screen and (max-width: 1120px) {
-        width: 100%;
+     width: 90%;
   }
 
 `
 const FerdigheterWrapper = styled.div`
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 786px) {
+    flex-direction: column;
+    }
 `
 const WrapperInside = styled.div`
     display: flex;
@@ -62,6 +66,7 @@ const IconWrapper = styled.div`
     height: 25vw;
     max-width: 310px;
     max-height: 310px;
+    padding: 0.8em;
 `
 const AboutWrapper = styled.div`
     margin-top: 30vh;
@@ -86,7 +91,7 @@ const Img = styled.img`
     object-fit: cover;
     margin: auto 10vw auto auto;
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 786px) {
         width: 95%;
         min-width: 320px;
         border-radius: 75px;
@@ -98,7 +103,6 @@ const Img = styled.img`
 function Mal () {
     return  (
         <>  
-            <BoxBackground1/>
             <Hero header="Johan B. Reitan" p="Frontend developer and 3D artist" img={[<Img src={ImageMe}/>]}/>
             <ContentBox>
                 <AboutWrapper>
@@ -121,11 +125,15 @@ function Mal () {
                         <IconWrapper>
                             <Dicon/>
                         </IconWrapper>
+                        <h3>3D</h3>
+                        <p>Har jobbet med Javascrypt, CSS/HTML og React til utvikling av nettsidene jeg har laget</p>
                     </WrapperInside>
                     <WrapperInside>
                     <IconWrapper>
-                            <Designicon/>
+                        <Designicon/>
                         </IconWrapper>
+                        <h3>Grafisk Design</h3>
+                        <p>Har jobbet med Javascrypt, CSS/HTML og React til utvikling av nettsidene jeg har laget</p>
                     </WrapperInside>
                 </FerdigheterWrapper>
             </ContentBox>

@@ -48,7 +48,7 @@ const Img = styled.img`
 const TreD = () => {
     return  (
         <>
-            <Hero header="3D" p="Mal text" img={[<Img src={TreDBilder}/>]}/>
+            <Hero header="3D portfolio" p="3D animasjoner og modeler" img={[<Img src={TreDBilder}/>]}/>
             <ConntentWrapper>
             <TextWrapper>
                 <h2>3D portfolio</h2>

@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
         z-index: 5;
         font-size: 6em;
          padding-bottom: 0;
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 810px) {
             font-size: 2em;
         }
     }
@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
         color: #FFFFFF;
         z-index: 5;
         margin-bottom: 0.5em;
+        @media only screen and (max-width: 810px) {
+            font-size: 2em;
+        }
     }
     h3 {
         font-style: normal;
@@ -38,7 +41,10 @@ const GlobalStyle = createGlobalStyle`
         line-height: 38px;
         color: #FFFFFF;
         z-index: 5;
-        padding-bottom: 1em;
+        padding-bottom: 0.6em;
+        @media only screen and (max-width: 810px) {
+            font-size: 1.5em;
+        }
     }
     p {
         font-size: 1em;

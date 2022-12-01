@@ -22,7 +22,7 @@ const HeroP = styled.p`
   color: ${({ theme }) => theme.colors.netural};
   font-size: 1.8em;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (${({ theme }) => theme.scale.xsmall}) {
         padding-top: 0.2em;
         font-size: 1.2em;
   }

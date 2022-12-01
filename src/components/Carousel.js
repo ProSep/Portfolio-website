@@ -24,7 +24,7 @@ const ImageStyle = styled.img`
   height: auto;
   border-radius: 33px;
   min-height: 630px;
-  @media only screen and (max-width: 1120px) {
+  @media only screen and (${({ theme }) => theme.scale.xsmall}) {
     min-height: auto;
   }
 `;

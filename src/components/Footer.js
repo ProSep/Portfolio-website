@@ -9,13 +9,15 @@ const FooterArea = styled.footer`
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  padding: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   `;
 
 const FooterHeader1 = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 4em;
+  padding-bottom: 0.2em;
   @media only screen and (max-width: 500px) {
     font-size: 2em;
   }
