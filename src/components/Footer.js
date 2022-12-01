@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const FooterArea = styled.footer`
-  padding: 44px;
   background-color: ${({ theme }) => theme.colors.neturalo};
   border-top-style: solid;
   border-color: white;
@@ -11,13 +10,14 @@ const FooterArea = styled.footer`
   flex-direction: column;
 	justify-content: center;
 	align-items: center;
-`;
+  `;
 
 const FooterHeader1 = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
+  padding: 80px 0 0;
 `;
 
 const FooterHeader2 = styled.p`
@@ -26,6 +26,7 @@ const FooterHeader2 = styled.p`
   font-size: 33px;
   line-height: 40px;
   text-transform: lowercase;
+  padding: 0 0 80px;
 `;
 
 

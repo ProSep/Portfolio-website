@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 82px;
         color: #FFFFFF;
         z-index: 5;
+        margin-bottom: 0.5em;
     }
     h3 {
         font-style: normal;
@@ -34,16 +35,18 @@ const GlobalStyle = createGlobalStyle`
         line-height: 38px;
         color: #FFFFFF;
         z-index: 5;
-        padding-top: 1em;
+        padding-bottom: 1em;
     }
     p {
         font-size: 1em;
         font-style: normal;
         color: #FFFFFF;
         z-index: 5;
-        padding-top: 1em;
+        padding-bottom: 1em;
     }
-
+    svg {
+        filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    }
 `
 
 export default GlobalStyle;

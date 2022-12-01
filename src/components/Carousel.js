@@ -2,8 +2,12 @@ import React, {useState} from "react";
 import styled, { css } from "styled-components";
 
 const MainWrapperStyle = styled.div`
-  width: auto;
+  width: 100%;
   height: 100%;
+  padding: 0  0 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const SlidesStyle = styled.div`
@@ -72,7 +76,7 @@ const DotsStyle = styled.i`
   }
 `
 
-const Carousel = ({data}) => {
+const Carousel = ({data, header}) => {
 
 const [current, setCurrent] = useState(0);
 const length = data.length;
@@ -93,6 +97,7 @@ if (!Array.isArray(data) || data.length <=0) {
   return (
     <>
       <MainWrapperStyle>
+        <h2>{header}</h2>
         <SlidesStyle>
           {data.map((data) => {
             return (

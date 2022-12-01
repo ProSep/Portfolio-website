@@ -4,7 +4,7 @@ import CardItem from "./Carditem";
 
 const CardsStyle = styled.div`
   background: ${({ theme }) => theme.colors.neturalo};
-  margin: 100px auto 0px auto;
+  margin: 30vh auto 0 auto;
 `;
 
 const HeaderText = styled.h2`
@@ -22,7 +22,6 @@ const CardsContainerStyle = styled.div`
 const CardsWrapperStyle = styled.div`
   display: flex;
   flex-flow: row wrap;
-  margin: 50px 0 45px;
   justify-content: center;
 `;
 
