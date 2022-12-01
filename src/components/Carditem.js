@@ -6,6 +6,7 @@ const CardItemStyle = styled.li`
   display: flex;
   flex: 1;
   max-width: 500px;
+  width: 100%;
   margin: 0 1rem;
   border-radius: 10px;
   margin-bottom: 24px;
@@ -72,7 +73,12 @@ const CardsImageStyle = styled.img`
 
 const CardsInfoStyle = styled.div`
   padding: 20px 30px 30px;
-  width: 500px; //Card width
+  max-width: 500px; //Card width
+  width: 100%;
+  min-width: 320;
+  @media only screen and (min-width: 1200px) {
+      width: 500px;
+  }
 `;
 
 const CardTextStyle = styled.h2`

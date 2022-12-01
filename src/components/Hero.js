@@ -16,16 +16,16 @@ const ContainerHero = styled.div`
     display: grid;
   `
 
-const HeroH1 = styled.h1`
-    color: ${({ theme }) => theme.colors.netural};
-    font-size: 6em;
-`
-
 const HeroP = styled.p`
   padding-top: 0.5em;
   padding-bottom: 0;
   color: ${({ theme }) => theme.colors.netural};
   font-size: 1.8em;
+
+  @media only screen and (max-width: 500px) {
+        padding-top: 0.2em;
+        font-size: 1.2em;
+  }
 `
 
 const ButtonHero = styled(ButtonStyle)`
@@ -46,9 +46,11 @@ const HeaderBackground = styled.div`
     backdrop-filter: blur(15px);
     border-radius: 0px 20px 20px 0px;
     z-index: 2;
+
     @media screen and (max-width: 1400px) {
-      margin: auto auto 200px 0;
-      padding: 30px 20px 30px 10%;
+      margin: auto auto 200px auto;
+      padding: 30px 20px 30px 30px;
+      border-radius: 20px;
     }
 `
 
@@ -60,7 +62,7 @@ function Hero(props) {
     <ContainerHero className="hero-container">
         {props.img}  
         <HeaderBackground>
-          <HeroH1>{props.header}</HeroH1>
+          <h1>{props.header}</h1>
           <HeroP>{props.p}</HeroP>
         </HeaderBackground>
         <ButtonHero outline large>CV Download</ButtonHero>

@@ -23,6 +23,10 @@ const CardsWrapperStyle = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    margin: auto auto auto auto;
+  }
 `;
 
 

@@ -85,6 +85,13 @@ const Img = styled.img`
     grid-area: 1/-1;
     object-fit: cover;
     margin: auto 10vw auto auto;
+
+    @media only screen and (max-width: 500px) {
+        width: 95%;
+        min-width: 320px;
+        border-radius: 75px;
+        margin: auto auto auto auto;
+  }
 `
 
 

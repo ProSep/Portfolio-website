@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: Verdana, Tahoma, sans-serif;
-    
+    font-size: 1rem;
     }
     body {
         background-color: #12263aff;
@@ -14,10 +14,13 @@ const GlobalStyle = createGlobalStyle`
     h1 {
         font-style: normal;
         font-weight: 300;
-        font-size: 4.1em;
-        line-height: 82px;
         color: #FFFFFF;
         z-index: 5;
+        font-size: 6em;
+         padding-bottom: 0;
+        @media only screen and (max-width: 500px) {
+            font-size: 2em;
+        }
     }
     h2 {
         font-style: normal;
