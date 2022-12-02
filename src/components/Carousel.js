@@ -35,23 +35,30 @@ const IconStyle = styled.i`
     align-items: center;
     align-self: center;
     display: block;
-    font-size: 5vw;
+    font-size: 3em;
     transition: 0.1s;
+
+    @media only screen and (max-width: 786px) {
+          font-size: 2em;
+    }
 
 &.${(props) =>
       props.right
         ? css`;
-            right: 5vw;
+            right: 2vw;
           `
         : css`;
-            left: 5vw;
+            left: 2vw;
           `};
 
 
     &:hover {
         cursor: pointer;
-        font-size: 8vw;
+        font-size: 4em;
         color: blue;
+        @media only screen and (max-width: 786px) {
+          font-size: 3em;
+    }
     }
 `
 

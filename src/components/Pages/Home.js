@@ -78,25 +78,25 @@ const AboutWrapper = styled.div`
 
 const Img = styled.img`
     width: 40%;
-    height: 70%;
-    min-height: 200px;
+    height: 80%;
+    min-height: 500px;
     min-width: 500px;
     max-width: 645px;
-    max-height: 751px;;
+    max-height: 750px;;
     border-radius: 154px;
     mix-blend-mode: luminosity;
     min-height: 0;
     z-index: 1;
     grid-area: 1/-1;
     object-fit: cover;
-    margin: auto 10vw auto auto;
+    margin: auto 10vw 7% auto;
 
     @media only screen and (max-width: 786px) {
         width: 95%;
         min-width: 320px;
         border-radius: 75px;
-        margin: auto auto auto auto;
-  }
+        margin: 10% auto auto auto;
+    }
 `
 
 

@@ -14,6 +14,12 @@ import Robot4 from "../../Assets/3DM/Robot4.png";
 import Robot5 from "../../Assets/3DM/Robot5.png";
 import Robot6 from "../../Assets/3DM/Robot6.png";
 
+import Our1 from "../../Assets/Web/Our1.png";
+import Our2 from "../../Assets/Web/Our2.png";
+import Our3 from "../../Assets/Web/Our3.png";
+import Out1 from "../../Assets/Web/Out1.png";
+import Out2 from "../../Assets/Web/Out2.png";
+
 
 
 export const CarouselDataGuitar = [
@@ -83,5 +89,32 @@ export const CarouselDataRobot = [
         image: Robot6,
         slug: 5,
     },
+];
+
+export const CarouselDataOur = [
+    {
+        image: Our1,
+        slug: 0,
+    },
+    {
+        image: Our2,
+        slug: 1,
+    },
+    {
+        image: Our3,
+        slug: 2,
+    },
+];
+
+export const CarouselDataOut = [
+    {
+        image: Out1,
+        slug: 0,
+    },
+    {
+        image: Out2,
+        slug: 1,
+    },
+
 ];
 

@@ -173,7 +173,7 @@ function Navbar() {
             </NavItemSty>
             <NavItemSty>
               <NavLink
-                to="/Programering"
+                to="/Web"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >

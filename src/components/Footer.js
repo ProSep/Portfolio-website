@@ -25,10 +25,8 @@ const FooterHeader1 = styled.p`
 
 const FooterHeader2 = styled.a`
   font-style: normal;
-  text-decoration: none;
   font-weight: 400;
   font-size: 2em;
-  color: white;
   @media only screen and (max-width: 500px) {
     font-size: 1em;
   }
