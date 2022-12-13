@@ -39,10 +39,10 @@ const Img = styled.img`
     object-fit: cover;
 `
 
-const Web = () => {
+const Grafisk = () => {
     return  (
         <>
-            <Hero header="Webutvikling" p="Nettsider jeg har laget" img={[<Img src={TreDBilder}/>]}/>
+            <Hero header="Grafisk Design" p="Design jeg har laget" img={[<Img src={TreDBilder}/>]}/>
             <ConntentWrapper>
             <TextWrapper>
                 <h2>Prosjekter</h2>
@@ -61,4 +61,4 @@ const Web = () => {
     )
 }
 
-export default Web;
+export default Grafisk;

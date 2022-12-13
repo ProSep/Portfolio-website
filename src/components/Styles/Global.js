@@ -5,11 +5,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: roboto, Tahoma, sans-serif;
     font-size: 1rem;
+    }
+    html {
+        min-height:100%;
+        position:relative;
     }
     body {
         background-color: #12263aff;
+        height: 100%;
     }
     h1 {
         font-style: normal;
@@ -17,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
         color: #FFFFFF;
         z-index: 5;
         font-size: 6em;
-         padding-bottom: 0;
+        padding-bottom: 0;
         @media only screen and (max-width: 810px) {
             font-size: 2em;
         }
@@ -52,6 +57,7 @@ const GlobalStyle = createGlobalStyle`
         color: #FFFFFF;
         z-index: 5;
         padding-bottom: 1em;
+        line-height: calc(1.5em + .2vw);
     }
     svg {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
@@ -60,5 +66,6 @@ const GlobalStyle = createGlobalStyle`
         color: white;
     }
 `
+    
 
 export default GlobalStyle;

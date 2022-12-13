@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
-import Logo from "../Assets/Icon/Logo.js";
 
 const Navbarsty = styled.nav`
   background: ${({ theme }) => theme.colors.neturalo};
@@ -9,7 +8,6 @@ const Navbarsty = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -19,11 +17,15 @@ const NavContainer = styled.div`
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-columns: 20% 60% auto;
+  grid-template-columns: auto 60% auto;
   grid-template-rows: 80px;
   max-width: 1500px;
   width: 100%;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    }
 `;
 
 const NavmenuSty = styled.ul`
@@ -72,7 +74,7 @@ const NavmenuSty = styled.ul`
 const LogoLinkSty = styled(Link)`
   color: ${({ theme }) => theme.colors.netural};
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 1.5em;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -81,13 +83,14 @@ const LogoLinkSty = styled(Link)`
   grid-column: 1;
 
   @media screen and (max-width: 960px) {
-    display: block;
-    position: flex;
     top: 0;
     right: 0;
-    font-size: 1.8rem;
-    cursor: pointer;
   }
+  :hover {
+      border-radius: 0;
+      border-bottom: 4px solid #fff;
+      transition: all 0.2s ease-out;
+    }
 `;
 
 const Menuicon = styled.div`
@@ -95,12 +98,10 @@ const Menuicon = styled.div`
 
   @media screen and (max-width: 960px) {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    grid-column: 2;
     cursor: pointer;
+    margin-right: 1.5em;
+    margin-left: auto;
   }
 `;
 
@@ -111,7 +112,7 @@ const NavItemSty = styled.li`
 const NavLink = styled(Link)`
   color: ${({ theme }) => theme.colors.netural};
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2em;
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -137,8 +138,24 @@ const NavLink = styled(Link)`
 `;
 
 const LogoWrapper = styled.div`
-    width: 7vh;
-    height: auto;
+    width: 5.4vh;
+    height: 5.4vh;
+    display: flex;
+    flex-direction: row;
+`
+
+const LogoText = styled.h1`
+    font-size: 2em;
+    line-height: 1em;
+    margin: auto auto auto 0.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    font-weight: lighter;
+`
+
+const Icon = styled.i`
+    font-size: 2em;
+    color: ${({ theme }) => theme.colors.netural};
 `
 
 
@@ -153,19 +170,15 @@ function Navbar() {
       <Navbarsty>
         <NavContainer className="navbar-container">
           <LogoLinkSty to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <LogoWrapper>
-            <Logo/>
+            <LogoWrapper>
+              <img src="/LogoNB.svg"></img>
             </LogoWrapper>
+            <LogoText>Johan B. Reitan</LogoText>
           </LogoLinkSty>
           <Menuicon className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <Icon className={click ? "fas fa-times" : "fas fa-bars"} />
           </Menuicon>
           <NavmenuSty active={click}>
-            <NavItemSty>
-              <NavLink to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </NavLink>
-            </NavItemSty>
             <NavItemSty>
               <NavLink to="/3D" className="nav-links" onClick={closeMobileMenu}>
                 3D
@@ -177,7 +190,12 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Programering
+                Webutvikling
+              </NavLink>
+            </NavItemSty>
+            <NavItemSty>
+              <NavLink to="/Grafisk" className="nav-links" onClick={closeMobileMenu}>
+                Grafisk
               </NavLink>
             </NavItemSty>
           </NavmenuSty>

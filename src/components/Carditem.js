@@ -82,7 +82,7 @@ const CardsInfoStyle = styled.div`
 const CardTextStyle = styled.h2`
   font-size: 1.2em;
   line-height: 1.2em;
-  color: ${({ theme }) => theme.colors.neturalo};
+  color: black;
 `;
 
 function CardItem(props) {

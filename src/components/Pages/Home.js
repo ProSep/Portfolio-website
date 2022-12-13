@@ -8,29 +8,6 @@ import Dicon from "../../Assets/Icon/3dicon.js";
 import Designicon from "../../Assets/Icon/DesignIcon.js";
 import ImageMe from "../../Assets/Images/Bilde-Johan-B-Reitan.jpg";
 
-const BoxBackground1 = styled.div`
-position: absolute;
-width: 592.78px;
-height: 792.31px;
-left: -173.21px;
-top: 929.88px;
-z-index: 1;
-background: #5E7CE2;
-filter: blur(500px);
-transform: rotate(5.17deg);
-`
-
-const BoxBackground2 = styled.div`
-position: absolute;
-width: 821px;
-height: 821px;
-left: 1149px;
-top: 2755px;
-z-index: -1;
-background: #DD0000;
-filter: blur(449.5px);
-`
-
 const ContentBox = styled.div`
     max-width: 1120px;
     width: 100%;
@@ -102,7 +79,7 @@ const Img = styled.img`
 
 function Mal () {
     return  (
-        <>  
+        <>
             <Hero header="Johan B. Reitan" p="Frontend developer and 3D artist" img={[<Img src={ImageMe}/>]}/>
             <ContentBox>
                 <AboutWrapper>
