@@ -3,7 +3,7 @@ import Carousel from "../Carousel";
 import { CarouselDataOut, CarouselDataOur} from "../Data/CarouselData";
 import Hero from "../Hero";
 import styled from "styled-components";
-import TreDBilder from "../../Assets/Images/3DBackground.png";
+import GrafiskBack from "../../Assets/Images/GrafiskBackground.png";
 
 
 const ConntentWrapper = styled.div`
@@ -42,7 +42,7 @@ const Img = styled.img`
 const Grafisk = () => {
     return  (
         <>
-            <Hero header="Grafisk Design" p="Design jeg har laget" img={[<Img src={TreDBilder}/>]}/>
+            <Hero header="Grafisk Design" p="Design jeg har laget" img={[<Img src={GrafiskBack}/>]}/>
             <ConntentWrapper>
             <TextWrapper>
                 <h2>Prosjekter</h2>

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useEffect } from "react";
 import styled, { css } from "styled-components";
 
 const MainWrapperStyle = styled.div`
@@ -84,6 +85,16 @@ const DotsStyle = styled.i`
 `
 
 const Carousel = ({data, header}) => {
+  //Preload Images
+  useEffect(() => {
+    data.forEach(data => {
+      const img = new window.Image()
+      img.src = data.image
+      img.addEventListener('load', () => {
+        console.log(`Image ${data.image} loaded`)
+      })
+    })
+  }, [])
 
 const [current, setCurrent] = useState(0);
 const length = data.length;

@@ -8,7 +8,7 @@ import Theme from './components/Styles/Theme';
 import Web from './components/Pages/Web';
 import BackgroundEffect from './components/BackgroundEffects';
 import Grafisk from './components/Pages/Grafisk';
-
+import { useEffect } from 'react';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Navbar/>
         <BackgroundEffect/>
         <Routes>
-          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/' element={<Home/>}/>
           <Route exact path='/3D' element={<TreD/>} />
           <Route exact path='/Web' element={<Web/>} />
           <Route exact path='/Grafisk' element={<Grafisk/>} />

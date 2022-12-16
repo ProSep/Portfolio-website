@@ -58,6 +58,9 @@ const GlobalStyle = createGlobalStyle`
         z-index: 5;
         padding-bottom: 1em;
         line-height: calc(1.5em + .2vw);
+        @media only screen and (min-width: 1000px) {
+            font-size: 1.2em;
+        }
     }
     svg {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));

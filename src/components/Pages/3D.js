@@ -50,10 +50,6 @@ const TreD = () => {
         <>
             <Hero header="3D portfolio" p="3D animasjoner og modeler" img={[<Img src={TreDBilder}/>]}/>
             <ConntentWrapper>
-            <TextWrapper>
-                <h2>3D portfolio</h2>
-                <p>Alle modelene er laget av meg</p>
-            </TextWrapper>
                 <Video data={Oblig1} header='Space robot'/>
                 <Video data={Oblig2} header="Mad scientist lab"/>
                 <Video data={Oblig3} header="Lightsaber showcase"/>

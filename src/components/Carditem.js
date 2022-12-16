@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Top from "./Top.js"
 
 const CardItemStyle = styled.li`
   display: flex;
@@ -73,23 +74,29 @@ const CardsImageStyle = styled.img`
 const CardsInfoStyle = styled.div`
   padding: auto auto auto auto;
   max-width: 500px; //Card width
-  width: 100%;
+  width: 80vw;
   @media only screen and (min-width: 1200px) {
       width: 500px;
   }
 `;
 
 const CardTextStyle = styled.h2`
-  font-size: 1.2em;
-  line-height: 1.2em;
+  font-size: 2em;
+  line-height: 2em;
   color: black;
+  text-align: center;
+  margin: 10px;
+  @media only screen and (max-width: 810px) {
+    font-size: 1.2em;
+    margin: 4px;
+  }
 `;
 
 function CardItem(props) {
   return (
     <>
       <CardItemStyle>
-        <CardLinkStyle to={props.path}>
+        <CardLinkStyle to={props.path} onClick={Top}>
           <CardsPicWrapStyle data-category={props.label}>
             <CardsImageStyle src={props.img} alt="Image" />
           </CardsPicWrapStyle>

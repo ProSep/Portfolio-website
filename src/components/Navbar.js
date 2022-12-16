@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
+import Top from "./Top";
 
 const Navbarsty = styled.nav`
   background: ${({ theme }) => theme.colors.neturalo};
@@ -169,7 +170,7 @@ function Navbar() {
     <>
       <Navbarsty>
         <NavContainer className="navbar-container">
-          <LogoLinkSty to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <LogoLinkSty to="/" className="navbar-logo" onClick={closeMobileMenu, Top}>
             <LogoWrapper>
               <img src="/LogoNB.svg"></img>
             </LogoWrapper>
@@ -180,7 +181,7 @@ function Navbar() {
           </Menuicon>
           <NavmenuSty active={click}>
             <NavItemSty>
-              <NavLink to="/3D" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to="/3D" className="nav-links" onClick={closeMobileMenu, Top}>
                 3D
               </NavLink>
             </NavItemSty>
@@ -188,13 +189,13 @@ function Navbar() {
               <NavLink
                 to="/Web"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={closeMobileMenu, Top}
               >
                 Webutvikling
               </NavLink>
             </NavItemSty>
             <NavItemSty>
-              <NavLink to="/Grafisk" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink to="/Grafisk" className="nav-links" onClick={closeMobileMenu, Top}>
                 Grafisk
               </NavLink>
             </NavItemSty>
