@@ -1,9 +1,9 @@
 import React from "react";
 import Carousel from "../Carousel";
-import { CarouselDataOut, CarouselDataOur} from "../Data/CarouselData";
+import { CarouselDataOut, CarouselDataOur, CarouselDataKom} from "../Data/CarouselData";
 import Hero from "../Hero";
 import styled from "styled-components";
-import TreDBilder from "../../Assets/Images/3DBackground.png";
+import WebBilder from "../../Assets/Images/WebBackground.png";
 
 
 const ConntentWrapper = styled.div`
@@ -42,20 +42,17 @@ const Img = styled.img`
 const Web = () => {
     return  (
         <>
-            <Hero header="Webutvikling" p="Nettsider jeg har laget" img={[<Img src={TreDBilder}/>]}/>
+            <Hero header="Webutvikling" p="Nettsider jeg har laget" img={[<Img src={WebBilder}/>]}/>
             <ConntentWrapper>
             <TextWrapper>
                 <h2>Prosjekter</h2>
                 <p>Jeg har laget vanlige statiske css, html, og javascrypt nettsider og React nettsider som denne. All prosjektene var oppgaver via Høgskolen, bortsett fra hjemmesiden min som er laget i etterkant. </p>
-            </TextWrapper>
-            <TextWrapper>
-                <h2>React prosjekt</h2>
-                <p>I prosjektet var det jeg og to andre som jobbet på, jeg gjorde mesteparten av programeringen. Det gikk ut på å analysere en allerede eksisterende nettside og forbedre den. Vi relagde nettsiden til <a href="https://www.outland.no/">Outland</a>, med endringer som vi mente var forbedret brukervennlighet. De har siden oppdatert nettsiden sin, så under kan du se screenshots fra "Vår" og derres gammele nettside.</p>
+                <p>I react prosjektet var det jeg og to andre som jobbet på, jeg gjorde veldig mye av programeringen. Det gikk ut på å analysere en allerede eksisterende nettside og forbedre den. Vi relagde nettsiden til <a href="https://www.outland.no/">Outland</a>, med endringer som vi mente var forbedret brukervennlighet. De har siden oppdatert nettsiden sin, så under kan du se screenshots fra "Vår" og derres gammele nettside.</p>
+                <p>Nettsidene som ble laget med css, html, og javascrypt har vært enkle nettsider, den jeg linker til og vil vise bilder til under er da den siste jeg lagde. Det er en "Nyhetside" som ble lagd for kommunikasjonsdesign faget.</p>
             </TextWrapper>
             <Carousel data={CarouselDataOur} header="Vår"/>
             <Carousel data={CarouselDataOut} header="Outland"/>
-                <h2>CSS, HTML, og JS</h2>
-                <p>Mitt siste HTML prosjekt var kommunikasjons prosjekt der vi lagde nettartikler med interaktive kart, diagram, </p>
+            <Carousel data={CarouselDataKom} header="HTML, CSS, JS Prosjekt" text=<a href="https://komdesign.pages.dev/">Lenke til siden</a>/>
             </ConntentWrapper>
         </>
     )

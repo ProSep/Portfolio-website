@@ -19,7 +19,7 @@ const CardsContainerStyle = styled.div`
   margin: 0 auto;
 `;
 
-const CardsWrapperStyle = styled.div`
+const CardsWrapperStyle = styled.ul`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

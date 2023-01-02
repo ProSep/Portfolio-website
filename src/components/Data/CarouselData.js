@@ -19,6 +19,9 @@ import Our2 from "../../Assets/Web/Our2.png";
 import Our3 from "../../Assets/Web/Our3.png";
 import Out1 from "../../Assets/Web/Out1.png";
 import Out2 from "../../Assets/Web/Out2.png";
+import Kom1 from "../../Assets/Web/Kom1.png";
+import Kom2 from "../../Assets/Web/Kom2.png";
+import Kom3 from "../../Assets/Web/Kom3.png";
 
 
 
@@ -114,6 +117,22 @@ export const CarouselDataOut = [
     {
         image: Out2,
         slug: 1,
+    },
+
+];
+
+export const CarouselDataKom = [
+    {
+        image: Kom1,
+        slug: 0,
+    },
+    {
+        image: Kom2,
+        slug: 1,
+    },
+    {
+        image: Kom3,
+        slug: 2,
     },
 
 ];

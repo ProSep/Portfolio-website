@@ -9,6 +9,9 @@ const MainWrapperStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  :last-child {
+      padding-bottom: 0;
+    }
 `;
 
 const SlidesStyle = styled.div`
@@ -25,6 +28,9 @@ const ImageStyle = styled.img`
   height: auto;
   border-radius: 33px;
   min-height: 630px;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+  filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
   @media only screen and (${({ theme }) => theme.scale.xsmall}) {
     min-height: auto;
   }
@@ -84,7 +90,11 @@ const DotsStyle = styled.i`
   }
 `
 
-const Carousel = ({data, header}) => {
+const StyledH3 = styled.h3`
+  padding-top: 1em;
+`
+
+const Carousel = ({data, header, text}) => {
   //Preload Images
   useEffect(() => {
     data.forEach(data => {
@@ -139,6 +149,7 @@ if (!Array.isArray(data) || data.length <=0) {
           })}
           </DotsWrapperStyle>
         </SlidesStyle>
+        <StyledH3>{text}</StyledH3>
       </MainWrapperStyle>
     </>
   )

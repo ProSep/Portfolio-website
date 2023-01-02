@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
 
-export const ButtonStyle = styled.button`
+export const ButtonStyle = styled.a`
   padding: 8px 20px;
   border-radius: 2px;
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 
 &:hover{
     background: #fff;

@@ -11,6 +11,7 @@ const FooterArea = styled.footer`
 	align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
+  margin-top: 30vh;
   `;
 
 const FooterHeader1 = styled.p`

@@ -1,19 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonStyle } from './Styles/Button'
-
-const VideoHero = styled.video`
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -2;
-`
 
 const ContainerHero = styled.div`
     height: 90vh;
     width: 100%;
     display: grid;
+    max-width: 1921px;
+    margin: auto auto;
   `
 
 const HeroP = styled.p`
@@ -26,16 +19,13 @@ const HeroP = styled.p`
         padding-top: 0.2em;
         font-size: 1.2em;
   }
+
+  @media screen and (min-width: 1921px) {
+      width: 660px;
+    }
 `
 
-const ButtonHero = styled(ButtonStyle)`
-  margin-top: 700px;
-  z-index: 2;
-  grid-area: 1/-1;
-  margin: auto auto 100px auto;
-`
-
-const HeaderBackground = styled.div`
+const HeaderBackground = styled.header`
     display: flex;
     flex-direction: column;
     width: auto;
@@ -52,20 +42,38 @@ const HeaderBackground = styled.div`
       padding: 30px 20px 30px 30px;
       border-radius: 20px;
     }
+    @media screen and (min-width: 1921px) {
+      position: relative;
+      left: -1000px;
+      padding: 30px 20px 30px 1380px;
+      background: none;
+    }
 `
-
-//        <VideoHero src = "https://static.videezy.com/system/resources/previews/000/056/350/original/Glowy-things-1-.mp4" loop autoPlay muted></VideoHero>
-//        <div className='hero-btns'></div>
+const HeaderAb = styled.div`
+    @media screen and (min-width: 1921px) {
+      position: absolute;
+      grid-area: 1/-1;
+      margin: auto auto auto 0;
+      background: rgba(94, 124, 226, 0.36);
+      backdrop-filter: blur(15px);
+      border-radius: 0px 20px 20px 0px;
+      left: -1000px;
+      padding: 30px 20px 30px 2380px;
+      bottom: -88px;
+    }
+`
 
 function Hero(props) {
   return (
     <ContainerHero className="hero-container">
-        {props.img}  
+        {props.img}
         <HeaderBackground>
+        <HeaderAb>
           <h1>{props.header}</h1>
           <HeroP>{props.p}</HeroP>
+          </HeaderAb>
         </HeaderBackground>
-        <ButtonHero outline large>CV Download</ButtonHero>
+        {props.button}
     </ContainerHero>
   )
 }

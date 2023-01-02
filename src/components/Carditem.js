@@ -16,6 +16,9 @@ const CardItemStyle = styled.li`
   @media only screen and (min-width: 1024px) {
     display: flex;
     margin-bottom: 2rem;
+    :last-child {
+      margin-bottom: 0;
+    }
   }
 `;
 const CardLinkStyle = styled(Link)`
@@ -23,9 +26,9 @@ const CardLinkStyle = styled(Link)`
   flex-flow: column;
   width: 100%;
   height: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+  filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;

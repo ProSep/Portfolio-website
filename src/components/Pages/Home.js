@@ -1,12 +1,16 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Cards from "../Cards";
 import Hero from "../Hero";
-import styled from "styled-components";
+import styled from 'styled-components';
 import {CardsData} from "../Data/CardsData";
 import Webicon from "../../Assets/Icon/Webicon.js";
 import Dicon from "../../Assets/Icon/3dicon.js";
 import Designicon from "../../Assets/Icon/DesignIcon.js";
 import ImageMe from "../../Assets/Images/Bilde-Johan-B-Reitan.jpg";
+import { ButtonStyle } from '../Styles/Button'
+import CV from "../../Assets/CV-Johan-B-Reitan.pdf";
+
+
 
 const ContentBox = styled.div`
     max-width: 1120px;
@@ -31,7 +35,7 @@ const FerdigheterWrapper = styled.div`
         flex-direction: column;
     }
 `
-const WrapperInside = styled.div`
+const WrapperInside = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +50,7 @@ const IconWrapper = styled.div`
     max-height: 310px;
     padding: 0.8em;
 `
-const AboutWrapper = styled.div`
+const AboutWrapper = styled.section`
     margin-top: 30vh;
     margin-bottom: 30vh;
     display: flex;
@@ -75,16 +79,27 @@ const Img = styled.img`
         border-radius: 75px;
         margin: 10% auto auto auto;
     }
+
+    @media only screen and (min-width: 1921px) {
+        margin: auto 192px 134px auto;
+    }
+`
+
+const ButtonHero = styled(ButtonStyle)`
+  margin-top: 700px;
+  z-index: 2;
+  grid-area: 1/-1;
+  margin: auto auto 100px auto;
 `
 
 
 function Mal () {
     return  (
         <>
-            <Hero header="Johan B. Reitan" p="Frontend developer and 3D artist" img={[<Img src={ImageMe}/>]}/>
+            <Hero header="Johan B. Reitan" p="Frontend developer and 3D artist" img={[<Img src={ImageMe}/>]} button={[<ButtonHero href={CV} download="CV-Johan-B-Reitan" outline large>CV Download</ButtonHero>]}/>
             <ContentBox>
                 <AboutWrapper>
-                    <h2>Om meg</h2>
+                <h2>Om meg</h2>
                     <p>Hei, jeg heter Johan og er en 22 år gammel fagperson innen digital medie- og design. Jeg har en bachelorgrad innen dette fagområdet og har en lidenskap for alt som er kreativt.</p>
                     <p>Som 3D-kunstner, front-end-utvikler og grafisk designer har jeg en mangfoldig ferdighetssett som gjør at jeg kan bringe en unik perspektiv til ethvert prosjekt. Jeg søker stadig etter nye utfordringer og måter å forbedre mitt håndverk på, og jeg leter alltid etter muligheter til å samarbeide med andre og lære av deres erfaringer.</p>
                     <p>På fritiden holder jeg meg oppdatert med de siste trendene innen teknologi og design, samt utforsker ny programvare og teknikker. Jeg er også en ivrig gamer og liker å tilbringe tid med venner og familie.</p>

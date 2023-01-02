@@ -67,6 +67,7 @@ const GlobalStyle = createGlobalStyle`
     }
     a {
         color: white;
+        font-size: inherit;
     }
 `
     
