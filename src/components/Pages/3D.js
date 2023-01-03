@@ -10,30 +10,8 @@ import Oblig2 from '../../Assets/3DA/Oblig2.mp4'
 import Oblig3 from '../../Assets/3DA/Oblig3.mp4'
 import styled from "styled-components";
 import TreDBilder from "../../Assets/Images/3DBackground.png";
+import ContentBox from "../Styles/ContentBox";
 
-
-const ConntentWrapper = styled.div`
-    width: 1120px;
-    margin: auto;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30vh;
-    background-color: ${({ theme }) => theme.colors.neturalo};
-    @media only screen and (max-width: 1120px) {
-        width: 100%;
-  }
-`
-
-const TextWrapper = styled.div`
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
 
 const Img = styled.img`
     width: 100%;
@@ -49,14 +27,14 @@ const TreD = () => {
     return  (
         <>
             <Hero header="3D portfolio" p="3D animasjoner og modeler" img={[<Img src={TreDBilder}/>]}/>
-            <ConntentWrapper>
+            <ContentBox>
                 <Video data={Oblig1} header='Space robot'/>
                 <Video data={Oblig2} header="Mad scientist lab"/>
                 <Video data={Oblig3} header="Lightsaber showcase"/>
                 <Carousel data={CarouselDataGuitar} header="Guitar"/>
                 <Carousel data={CarouselDataRoom} header="Bedroom"/>
                 <Carousel data={CarouselDataRobot} header="Atlas from Portal 2"/>
-            </ConntentWrapper>
+            </ContentBox>
         </>
     )
 }

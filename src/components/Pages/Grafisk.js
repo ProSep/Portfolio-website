@@ -4,22 +4,8 @@ import { CarouselDataOut, CarouselDataOur} from "../Data/CarouselData";
 import Hero from "../Hero";
 import styled from "styled-components";
 import GrafiskBack from "../../Assets/Images/GrafiskBackground.png";
+import ContentBox from "../Styles/ContentBox";
 
-
-const ConntentWrapper = styled.div`
-    width: 1120px;
-    margin: auto;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30vh;
-    background-color: ${({ theme }) => theme.colors.neturalo};
-    @media only screen and (max-width: 1120px) {
-        width: 100%;
-  }
-`
 
 const TextWrapper = styled.div`
     margin-top: 10vh;
@@ -43,7 +29,7 @@ const Grafisk = () => {
     return  (
         <>
             <Hero header="Grafisk Design" p="Design jeg har laget" img={[<Img src={GrafiskBack}/>]}/>
-            <ConntentWrapper>
+            <ContentBox>
             <TextWrapper>
                 <h2>Prosjekter</h2>
                 <p>Jeg har laget vanlige statiske css, html, og javascrypt nettsider og React nettsider som denne. All prosjektene var oppgaver via Høgskolen, bortsett fra hjemmesiden min som er laget i etterkant. </p>
@@ -56,7 +42,7 @@ const Grafisk = () => {
             <Carousel data={CarouselDataOut} header="Outland"/>
                 <h2>CSS, HTML, og JS</h2>
                 <p>Mitt siste HTML prosjekt var kommunikasjons prosjekt der vi lagde nettartikler med interaktive kart, diagram, </p>
-            </ConntentWrapper>
+            </ContentBox>
         </>
     )
 }

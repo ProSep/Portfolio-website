@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import Cards from "../Cards";
 import Hero from "../Hero";
 import styled from 'styled-components';
@@ -9,25 +9,11 @@ import Designicon from "../../Assets/Icon/DesignIcon.js";
 import ImageMe from "../../Assets/Images/Bilde-Johan-B-Reitan.jpg";
 import { ButtonStyle } from '../Styles/Button'
 import CV from "../../Assets/CV-Johan-B-Reitan.pdf";
+import ContentBox from '../Styles/ContentBox';
 
 
 
-const ContentBox = styled.div`
-    max-width: 1120px;
-    width: 100%;
-    margin: 0px auto 0px auto;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: ${({ theme }) => theme.colors.neturalo};
 
-    @media only screen and (max-width: 1120px) {
-     width: 90%;
-  }
-
-`
 const FerdigheterWrapper = styled.div`
     display: flex;
     flex-direction: row;
