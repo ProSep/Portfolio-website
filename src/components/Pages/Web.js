@@ -46,9 +46,9 @@ const Web = () => {
             <ConntentWrapper>
             <TextWrapper>
                 <h2>Prosjekter</h2>
-                <p>Jeg har laget vanlige statiske css, html, og javascrypt nettsider og React nettsider som denne. All prosjektene var oppgaver via Høgskolen, bortsett fra hjemmesiden min som er laget i etterkant. </p>
-                <p>I react prosjektet var det jeg og to andre som jobbet på, jeg gjorde veldig mye av programeringen. Det gikk ut på å analysere en allerede eksisterende nettside og forbedre den. Vi relagde nettsiden til <a href="https://www.outland.no/">Outland</a>, med endringer som vi mente var forbedret brukervennlighet. De har siden oppdatert nettsiden sin, så under kan du se screenshots fra "Vår" og derres gammele nettside.</p>
-                <p>Nettsidene som ble laget med css, html, og javascrypt har vært enkle nettsider, den jeg linker til og vil vise bilder til under er da den siste jeg lagde. Det er en "Nyhetside" som ble lagd for kommunikasjonsdesign faget.</p>
+                <p>Jeg har laget statiske HTML-, CSS- og JavaScript-nettsteder, samt React-nettsteder, som denne du for øyeblikket ser på. Disse prosjektene var alle oppgaver fra min universitet, med unntak av min personlige nettside som jeg laget etter å ha fullført studiene mine. </p>
+                <p>I React-prosjektet jobbet jeg sammen med to andre teammedlemmer for å analysere og forbedre en eksisterende nettside for <a href="https://www.outland.no/">Outland</a>. Jeg hadde ansvaret for mye av programvaringen, og vårt mål var å forbedre brukeropplevelsen. Outland-nettstedet har siden blitt oppdatert, men du kan se skjermbilder av vår versjon og deres originale nettside nedenfor.</p>
+                <p>Nettstedene jeg laget med HTML, CSS og JavaScript var enkle nettsider, og den jeg lenker til og viser bilder for nedenfor er den siste jeg laget. Det er en "Nyhetsside" som jeg laget for et kurs i kommunikasjonsdesign.</p>
             </TextWrapper>
             <Carousel data={CarouselDataOur} header="Vår"/>
             <Carousel data={CarouselDataOut} header="Outland"/>

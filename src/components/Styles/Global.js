@@ -61,6 +61,9 @@ const GlobalStyle = createGlobalStyle`
         @media only screen and (min-width: 1000px) {
             font-size: 1.2em;
         }
+        @media only screen and (min-width: 1921px) {
+            line-height: 1.5em;
+        }
     }
     svg {
         filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));

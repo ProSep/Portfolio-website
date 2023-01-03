@@ -12,9 +12,15 @@ const Navbarsty = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
-  filter: drop-shadow(0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-filter: drop-shadow(
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  );
+  filter: drop-shadow(
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19)
+  );
 `;
 
 const NavContainer = styled.div`
@@ -29,7 +35,7 @@ const NavContainer = styled.div`
 
   @media screen and (max-width: 960px) {
     display: flex;
-    }
+  }
 `;
 
 const NavmenuSty = styled.ul`
@@ -91,10 +97,10 @@ const LogoLinkSty = styled(Link)`
     right: 0;
   }
   :hover {
-      border-radius: 0;
-      border-bottom: 4px solid #fff;
-      transition: all 0.2s ease-out;
-    }
+    border-radius: 0;
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
 `;
 
 const Menuicon = styled.div`
@@ -142,26 +148,26 @@ const NavLink = styled(Link)`
 `;
 
 const LogoWrapper = styled.div`
-    width: 5.4vh;
-    height: 5.4vh;
-    display: flex;
-    flex-direction: row;
-`
+  width: 5.4vh;
+  height: 5.4vh;
+  display: flex;
+  flex-direction: row;
+`;
 
 const LogoText = styled.h1`
-    font-size: 2em;
-    line-height: 1em;
-    margin: auto auto auto 0.4em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-variant: small-caps;
-    font-weight: lighter;
-`
+  font-size: 2em;
+  line-height: 1em;
+  margin: auto auto auto 0.4em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-variant: small-caps;
+  font-weight: lighter;
+`;
 
 const Icon = styled.i`
-    font-size: 2em;
-    color: ${({ theme }) => theme.colors.netural};
-`
-
+  font-size: 2em;
+  color: ${({ theme }) => theme.colors.netural};
+`;
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -173,7 +179,14 @@ function Navbar() {
     <>
       <Navbarsty>
         <NavContainer className="navbar-container">
-          <LogoLinkSty to="/" className="navbar-logo" onClick={closeMobileMenu, Top}>
+          <LogoLinkSty
+            to="/"
+            className="navbar-logo"
+            onClick={() => {
+              closeMobileMenu();
+              Top();
+            }}
+          >
             <LogoWrapper>
               <img src="/LogoNB.svg"></img>
             </LogoWrapper>
@@ -184,7 +197,14 @@ function Navbar() {
           </Menuicon>
           <NavmenuSty active={click}>
             <NavItemSty>
-              <NavLink to="/3D" className="nav-links" onClick={closeMobileMenu, Top}>
+              <NavLink
+                to="/3D"
+                className="nav-links"
+                onClick={() => {
+                  closeMobileMenu();
+                  Top();
+                }}
+              >
                 3D
               </NavLink>
             </NavItemSty>
@@ -192,13 +212,23 @@ function Navbar() {
               <NavLink
                 to="/Web"
                 className="nav-links"
-                onClick={closeMobileMenu, Top}
+                onClick={() => {
+                  closeMobileMenu();
+                  Top();
+                }}
               >
                 Webutvikling
               </NavLink>
             </NavItemSty>
             <NavItemSty>
-              <NavLink to="/Grafisk" className="nav-links" onClick={closeMobileMenu, Top}>
+              <NavLink
+                to="/Grafisk"
+                className="nav-links"
+                onClick={() => {
+                  closeMobileMenu();
+                  Top();
+                }}
+              >
                 Grafisk
               </NavLink>
             </NavItemSty>

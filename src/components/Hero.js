@@ -10,19 +10,16 @@ const ContainerHero = styled.div`
   `
 
 const HeroP = styled.p`
-  padding-top: 0.5em;
+  padding-top: 0.5rem;
   padding-bottom: 0;
   color: ${({ theme }) => theme.colors.netural};
   font-size: 1.8em;
 
   @media only screen and (${({ theme }) => theme.scale.xsmall}) {
-        padding-top: 0.2em;
+        padding-top: 0.2rem;
         font-size: 1.2em;
   }
 
-  @media screen and (min-width: 1921px) {
-      width: 660px;
-    }
 `
 
 const HeaderBackground = styled.header`
@@ -43,10 +40,7 @@ const HeaderBackground = styled.header`
       border-radius: 20px;
     }
     @media screen and (min-width: 1921px) {
-      position: relative;
-      left: -1000px;
-      padding: 30px 20px 30px 1380px;
-      background: none;
+      padding: 30px 20px 30px 380px;
     }
 `
 const HeaderAb = styled.div`
@@ -55,11 +49,10 @@ const HeaderAb = styled.div`
       grid-area: 1/-1;
       margin: auto auto auto 0;
       background: rgba(94, 124, 226, 0.36);
-      backdrop-filter: blur(15px);
-      border-radius: 0px 20px 20px 0px;
       left: -1000px;
-      padding: 30px 20px 30px 2380px;
-      bottom: -88px;
+      padding: 0px 0px 0px 1000px;
+      height: calc(60px + 1.8em + 6em + 0.5rem + 3.2px * 7.8 + 8.65px);
+      bottom: 0px; 
     }
 `
 
@@ -68,10 +61,9 @@ function Hero(props) {
     <ContainerHero className="hero-container">
         {props.img}
         <HeaderBackground>
-        <HeaderAb>
+        <HeaderAb/>
           <h1>{props.header}</h1>
           <HeroP>{props.p}</HeroP>
-          </HeaderAb>
         </HeaderBackground>
         {props.button}
     </ContainerHero>

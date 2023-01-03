@@ -19,6 +19,7 @@ const FooterHeader1 = styled.p`
   font-weight: 700;
   font-size: 4em;
   padding-bottom: 0.2em;
+  z-index: 2;
   @media only screen and (max-width: 500px) {
     font-size: 2em;
   }
@@ -28,6 +29,7 @@ const FooterHeader2 = styled.a`
   font-style: normal;
   font-weight: 400;
   font-size: 2em;
+  z-index: 2;
   @media only screen and (max-width: 500px) {
     font-size: 1em;
   }
