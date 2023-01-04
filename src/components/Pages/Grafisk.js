@@ -34,8 +34,8 @@ const Grafisk = () => {
                 <h2>Prosjekt</h2>
                 <p>Jeg har tidligere gjennomført et større prosjekt i faget "Grafisk Design". Oppgaven gikk ut på å lage en profilmanual for et oppdiktet selskap kalt "The Habituary", som er en møbelbutikk. Som en del av profilmanualen designet jeg et logo, lagde en brosjyre og bestemte fargesettingen og typografien for selskapet.</p>
             </TextWrapper>
-            <Carousel data={CarouselDataMan} header="Profilmanual"/>
-            <Carousel data={CarouselDataBro} header="Brochure"/>
+                <Carousel data={CarouselDataMan} header="Profilmanual"/>
+                <Carousel data={CarouselDataBro} header="brosjyre"/>
             </ContentBox>
         </>
     )

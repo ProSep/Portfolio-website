@@ -1,5 +1,6 @@
 import TD from "../../Assets/Bat/15AA.png";
 import WB from "../../Assets/Web/WebHome.png";
+import GF from "../../Assets/Grafisk/GrafiskHome.png";
 
 export const CardsData = [
     {
@@ -12,14 +13,14 @@ export const CardsData = [
     {
         image: TD,
         text:"3D Portfolio",
-        label:"Adventure",
+        label:"Portfolio",
         path:"/3D",
         slug: 1,
     },
     {
-        image:"https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
+        image: GF,
         text:"Grafisk Design Portfolio",
-        label:"Adventure",
+        label:"Portfolio",
         path:"/Grafisk",
         slug: 2,
     },
