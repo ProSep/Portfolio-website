@@ -23,6 +23,15 @@ import Kom1 from "../../Assets/Web/Kom1.png";
 import Kom2 from "../../Assets/Web/Kom2.png";
 import Kom3 from "../../Assets/Web/Kom3.png";
 
+import Man1 from "../../Assets/Grafisk/Man1.png";
+import Man2 from "../../Assets/Grafisk/Man2.png";
+import Man3 from "../../Assets/Grafisk/Man3.png";
+import Man4 from "../../Assets/Grafisk/Man4.png";
+import Man5 from "../../Assets/Grafisk/Man5.png";
+import Bro1 from "../../Assets/Grafisk/Bro1.png";
+import Bro2 from "../../Assets/Grafisk/Bro2.png";
+import Bro3 from "../../Assets/Grafisk/Bro3.png";
+import Bro4 from "../../Assets/Grafisk/Bro4.png";
 
 
 export const CarouselDataGuitar = [
@@ -134,6 +143,50 @@ export const CarouselDataKom = [
         image: Kom3,
         slug: 2,
     },
+
+];
+
+export const CarouselDataMan = [
+    {
+        image: Man1,
+        slug: 0,
+    },
+    {
+        image: Man2,
+        slug: 1,
+    },
+    {
+        image: Man3,
+        slug: 2,
+    },
+    {
+        image: Man4,
+        slug: 3,
+    },
+    {
+        image: Man5,
+        slug: 4,
+    }
+
+];
+
+export const CarouselDataBro = [
+    {
+        image: Bro1,
+        slug: 0,
+    },
+    {
+        image: Bro2,
+        slug: 1,
+    },
+    {
+        image: Bro3,
+        slug: 2,
+    },
+    {
+        image: Bro4,
+        slug: 3,
+    }
 
 ];
 
