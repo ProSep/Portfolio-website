@@ -11,7 +11,7 @@ import Bachelor from '../../Assets/3DA/film_olje.mp4'
 import styled from "styled-components";
 import TreDBilder from "../../Assets/Images/3DBackground.png";
 import ContentBox from "../Styles/ContentBox";
-
+//Update
 
 const Img = styled.img`
     width: 100%;
